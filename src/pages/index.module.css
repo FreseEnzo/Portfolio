@@ -29,6 +29,7 @@
   border-radius: 50%;
   border: 3px solid white;
   margin-bottom: 20px;
+  user-select: none;
 }
 
 .heroTitle {
@@ -45,8 +46,8 @@
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem 2rem;
-  background-color: #61dafb;
-  color: #282c34;
+  background-color: #161A30;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   text-decoration: none;
