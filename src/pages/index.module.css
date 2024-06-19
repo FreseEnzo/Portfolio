@@ -1,23 +1,78 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
   position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  color: white;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 20px;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.projetosSection {
+  padding: 4rem 0;
+}
+
+.projetosGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.projeto {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 2rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projetoImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.projetoLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
 }
